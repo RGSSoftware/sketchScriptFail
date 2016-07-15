@@ -6,7 +6,8 @@ I’ve reviewed .sketch docs and tried many different solutions, but I couldn’
 
 Maybe, I’m missing something simple.
 
-'''javascript
+```javascript
+
 var documentName = context.document.displayName();
 
 var selectedLayers = context.selection;
@@ -37,4 +38,4 @@ if (selectedCount == 0) {
 
 };
 
-'''
+```
