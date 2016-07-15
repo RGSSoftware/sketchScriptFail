@@ -1,4 +1,4 @@
-# sketchScriptFail
+# Sketch Script Fail
 
 Here’s my failed attempt at creating a .sketch script. The script was supports to create a MSSliceLayer with the same frame as the selected layer. However, when I add MSSliceLayer to the current document it’s center point is the current document center point and not the selected layer.
 
