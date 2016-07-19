@@ -41,3 +41,35 @@ if (selectedCount == 0) {
 };
 
 ```
+
+###Solution
+Thanks to [BohemianCoding](https://github.com/BohemianCoding/developer.sketchapp.com/issues/60) the solution is:
+ ```javascript
+
+var documentName = context.document.displayName();
+
+var selectedLayers = context.selection;
+var selectedCount = selectedLayers.count();
+
+if (selectedCount == 0) {
+
+  log('No layers are selected.');
+  
+} else {
+
+  log('Selected layers:');
+  for (var i = 0; i < selectedCount; i++) {
+    var layer = selectedLayers[i];
+
+    var sliceLayer = MSSliceLayer.sliceLayerFromLayer(layer);
+    context.document.addLayer(sliceLayer);
+    
+  }
+
+};
+
+```
+
+As you can see this solution uses MSSliceLayer.sliceLayerFromLayer() which is not apart of the official docs, at least currently, but apart of MSSliceLayer’s unofficial [header](https://github.com/abynim/Sketch-Headers/blob/master/Headers/MSSliceLayer.h). 
+
+
