@@ -73,7 +73,7 @@ if (selectedCount == 0) {
 As you can see this solution uses MSSliceLayer.sliceLayerFromLayer() which is not apart of the official docs, at least currently, but apart of MSSliceLayer’s unofficial [header](https://github.com/abynim/Sketch-Headers/blob/master/Headers/MSSliceLayer.h). 
 
 ###Extra
-I've as noticed a few other things not working properly. Updating a MSSliceLayer.frame in order to add a 10px padding,
+I've also noticed a few other things not working properly. Updating a MSSliceLayer.frame in order to add a 10px padding,
 ```javascript
 
 MSSliceLayer.frame.scaleBy()
