@@ -43,7 +43,7 @@ if (selectedCount == 0) {
 ```
 
 ###Solution
-Thanks to [BohemianCoding](https://github.com/BohemianCoding/developer.sketchapp.com/issues/60) the solution is:
+Thanks to [BohemianCoding](https://github.com/BohemianCoding/developer.sketchapp.com/issues/60):
  ```javascript
 
 var documentName = context.document.displayName();
